@@ -7,3 +7,6 @@
     - name: Pause so I can inspect the job pod
       pause:
         minutes: 10
+    - name: Goodbye Message
+      debug:
+        msg: "Pause done! Goodbye!"
