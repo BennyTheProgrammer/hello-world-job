@@ -3,5 +3,7 @@
   tasks:
     - name: Hello Message
       debug:
-        msg: "Hello World!"
-
+        msg: "Hello World! Now pausing job! Feel free to poke around inside the job's pod."
+    - name: Pause so I can inspect the job pod
+      pause:
+        minutes: 10
