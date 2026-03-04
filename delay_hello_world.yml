@@ -1,9 +1,6 @@
 - name: Hello World Sample
   hosts: all
-  gather_facts: false
   tasks:
-    - name: Powershell Greeting
-      ansible.windows.win_shell: 'Write-Output "Hello from a windows computer!"'
     - name: Hello Message
       debug:
         msg: "Hello World! Now pausing job! Feel free to poke around inside the job's pod."
