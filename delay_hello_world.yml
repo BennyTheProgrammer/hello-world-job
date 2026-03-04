@@ -3,6 +3,7 @@
   gather_facts: false
   tasks:
     - name: Hello Message
+      ansible.windows.win_shell: 'Write-Output "Hello from $env:COMPUTERNAME"'
       debug:
         msg: "Hello World! Now pausing job! Feel free to poke around inside the job's pod."
     - name: Pause so I can inspect the job pod
@@ -11,4 +12,3 @@
     - name: Goodbye Message
       debug:
         msg: "Pause done! Goodbye!"
-#ansible.windows.win_shell: 'Write-Output "Hello from $env:COMPUTERNAME"'
